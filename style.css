@@ -3,16 +3,45 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(17, 17, 17);
     color:aliceblue;
+    padding:2rem;
   }
 
   div {
-    width: 60%;
+    width: 50%;
     margin: 0.5rem auto;
     display: flex;
     flex-direction: column;
 
   }
 
+  input {
+    padding: 15px 20px;
+    border:1px solid white;
+    border-radius:10px;
+    margin-top:1rem;
+  }
+
   button {
     margin: 10px 3rem 5px 3rem;
+    background:white;
+    color:black;
+    padding:12px 20px;
+    border:1px solid white;
+    border-radius:10px;
+    font-weight: 600;
+    font-size:14px;
+  }
+
+  @media(max-width:768px) {
+    body {
+      padding:6rem 2rem;
+    }
+
+    div {
+      width: 100%;
+      margin: 1rem auto;
+      display: flex;
+      flex-direction: column;
+  
+    }
   }
